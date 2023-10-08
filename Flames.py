@@ -25,7 +25,7 @@ result = ["Friends","Love","Affection","Marriage","Enemy","Siblings"]
 # keep looping until only one item
 # Is not remaining in the result list
 
-while number > 1 :
+while len(result) > 1 :
 
 # store that index value from
 # where we have to perform slicing.
@@ -38,7 +38,7 @@ while number > 1 :
           right = result[split_result + 1:]
           left = result[: split_result]
           # list concatenation
-          result = right + left
+          result =  left + right
     else:
          result = result[: len(result) - 1]
 
